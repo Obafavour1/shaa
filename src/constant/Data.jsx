@@ -3,7 +3,6 @@ import {music, integrity, faith, excellence, community,access, inspiration, inst
 export const navItems = [
   { id: 1, name: "Our mission",  href: "#mission" },
   { id: 2, name: "Contact us",  href: "#footer" },
-  { id: 3, name: "Become an ambassador",  href: "#ambassador" },
 ];
 
 export const quickLinks = [
@@ -61,12 +60,12 @@ export const coreValues  = [
 
 export const weAre =[
   {
-    desc:"Watch to your favorite sermons ",
+    desc:"Watch and listen to your favorite sermons ",
     icon : video
   },
   
   {
-    desc:" listen to edifying music and podcasts",
+    desc:" Listen to edifying music and podcasts",
     icon : music
   },
   

@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+* {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
 
 span{
   color: #FFF700;
@@ -33,8 +43,20 @@ span{
     @apply w-[80%] 
   }
 
+  .link-nav {
+    @apply   transition-all ease-in-out duration-500 relative
+  }
+
+  .link-nav::after{
+    @apply content-[''] absolute -left-0 -bottom-0 h-[2px] w-[0%] bg-primary duration-300 rounded-full
+  }
+
+  .link-nav:hover::after {
+    @apply w-[80%] 
+  }
+
   .nav-hover{
-    @apply bg-primary py-[11px] px-[10px] rounded-[5px] text-black
+    @apply bg-primary py-[11px] px-[10px] rounded-[5px] text-black hover:text-gray-500
   }
 
   p{
@@ -42,7 +64,7 @@ span{
   }
 
   .regular-h2{
-    @apply text-[24px] md:text-[56px] font-bold leading-relaxed 
+    @apply text-[24px] md:text-[56px] font-[700] leading-[28.8px] md:leading-[67.2px] 
   }
   .regular-h3{
     @apply text-[20px] md:text-[36px] font-normal md:font-bold leading-relaxed text-primary
@@ -53,7 +75,7 @@ span{
   }
 
   .regular-p{
-    @apply text-[16px] font-normal md:text-[20px] md:font-medium
+    @apply text-[16px] font-normal md:text-[20px] md:font-medium leading-[19.2px] md:leading-[40px]
   }
 
   .footer-h{

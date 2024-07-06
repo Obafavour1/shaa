@@ -4,7 +4,7 @@ import { android,arrow,apple, iphone, iphonemobile } from '../assets/Images'
 
 const Section = () => {
   return (
-    <section id='section'>
+    <section id='section' className='pt-[80px]'>
       <div id='whoweare' className='text-center md:mt-[50px]'>
         <div>
           <h3 className='regular-h3'>Who we are</h3>
@@ -15,7 +15,7 @@ const Section = () => {
           </p>
         </div>
         <div  className='mt-8'>
-          <ul className='text-center gap-8'>
+          <ul className='md:flex text-center gap-8'>
             {weAre.map((we) => (
               <li className='gap-8' key={we.id}>
                 <div className='bt-[18px]  w-full pb-[16px] md:pb-[18px] mb-[33px] md:mb-[72px]'>
@@ -29,12 +29,12 @@ const Section = () => {
         </div>
       </div>
 
-      <div id='value'>
+      <div id='value' className='mt-[50px]'>
         <h3 className='regular-h3 text-center'>Core values</h3>
         <ul className='grid mt-[16px] md:mt-[80px] md:grid-cols-3 gap-[28px]'>
           {coreValues.map((values) => (
             <li className='box' key={values.id}>
-              <div className='bt-[18px] border-b-2 w-full border-primary pb-[16px] md:pb-[18px] mb-[33px] md:mb-[72px]'>
+              <div className='bt-[18px] border-b-2 w-full border-primary pb-[16px] md:pb-[18px] mb-[33px] md:mb-[80px]'>
                 <h4 className='regular-h4'>{values.title}</h4>
                 <img src={values.icon} alt="icon" className='w-[40px] md:w-[92px] mx-auto h-[40px] md:h-[92px] mt-[16px] md:mt-4' />
               </div>
@@ -66,9 +66,9 @@ const Section = () => {
           <div className=' h-full w-full md:text-left flex flex-col md:items-start justify-center'>
             <div>
               <img src= {iphonemobile} className='h-[148px] w-[60px] md:hidden mx-auto' alt="Iphone" />
-              <div className='mt-[16px] mb-[25px] md:mb-[50px]'>
-                <p className='text-[17.7px] text-black md:text-[32px] font-bold'>Coming soon...</p>
-                <p className='text-[32px] font-bold text-black hidden md:flex'>This is a place holder for more contents</p>
+              <div className='mt-[16px] mb-[25px] md:mb-[50px] md:w-[90%]'>
+                <p className='text-[14px] text-black md:text-[30px] font-bold leading-4 md:leading-[38.4px]'>Coming soon...</p>
+                <p className='text-[14px] text-black md:text-[28px] font-bold leading-4 md:leading-[38.4px]'>Join our Ambassadors and be the first to hear when we launch.</p>
               </div>
             </div>
             <div className='flex flex-wrap gap-2 '>
